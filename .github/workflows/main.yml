@@ -26,7 +26,6 @@ jobs:
         run: |
           pyinstaller --noconfirm --clean --windowed \
           --hidden-import=cv2 \
-          --collect-all PyQt6 \
           --name="AstroImageStretchTool" \
           --icon=aipt.icns \
           aist.py
