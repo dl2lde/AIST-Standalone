@@ -26,6 +26,8 @@ jobs:
         run: |
           pyinstaller --noconfirm --clean --windowed \
           --hidden-import=cv2 \
+          --hidden-import=astropy \
+          --collect-submodules astropy \
           --name="AstroImageStretchTool" \
           --icon=aipt.icns \
           aist.py
